@@ -1,6 +1,7 @@
-# `sync-cordova-xml`
+# `sync-cordova-xml2`
 
 > Sync Cordova's XML files with your package.json
+> This is a fork of sync-cordova-xml updated to use xml-js
 
 ## Usage
 
