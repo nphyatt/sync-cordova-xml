@@ -1,30 +1,34 @@
 {
-  "name": "sync-cordova-xml",
-  "version": "0.4.0",
-  "description": "Sync Cordova's XML files with your package.json",
+  "name": "sync-cordova-xml2",
+  "version": "0.0.1",
+  "description": "Sync Cordova's XML files with your package.json mo bettah (Updated Fork of https://github.com/nphyatt/sync-cordova-xml/issues)",
   "main": "index.js",
   "dependencies": {
     "minimist": "^1.2.0",
     "nanoassert": "^1.1.0",
     "parse-author": "^2.0.0",
-    "xmldom": "^0.1.27"
+    "xml-js": "^1.6.7"
   },
   "devDependencies": {},
   "scripts": {
     "test": "true"
   },
   "bin": {
-    "sync-cordova-xml": "bin/sync.js"
+    "sync-cordova-xml2": "bin/sync.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emilbayes/sync-cordova-xml.git"
+    "url": "git+https://github.com/nphyatt/sync-cordova-xml.git"
   },
   "keywords": [],
   "author": "Emil Bay <github@tixz.dk>",
-  "license": "ISC",
+  "contributors": [
+    "Emil Bay <github@tixz.dk>",
+    "Nick Hyatt <nick@ionic.io"
+  ],
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/emilbayes/sync-cordova-xml/issues"
+    "url": "https://github.com/nphyatt/sync-cordova-xml/issues"
   },
-  "homepage": "https://github.com/emilbayes/sync-cordova-xml#readme"
+  "homepage": "https://github.com/nphyatt/sync-cordova-xml#readme"
 }
