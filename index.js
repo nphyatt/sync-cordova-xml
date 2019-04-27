@@ -42,7 +42,7 @@ module.exports = function (jsonObj, xmlStr, mode) {
     case 'plugin':
       plugin = getNodeByName('plugin', xmlDoc.elements);
       plugin.attributes.version = jsonObj.version || errorAndExit('No version found in package.json');
-      plugin.attributes.id = trimScope(jsonObj.name) || errorAndExit('No package name found in package.json');
+      plugin.attributes.id = jsonObj.name || errorAndExit('No package name found in package.json');
       name = getNodeByName('name', plugin.elements)
       name.elements[0].text = jsonObj.name;
       if (jsonObj.description) {
@@ -85,9 +85,4 @@ module.exports = function (jsonObj, xmlStr, mode) {
 
   stringXml = xml.js2xml(xmlDoc, {spaces: 4, indentCdata: true});
   return stringXml;
-}
-
-
-function trimScope (str) {
-  return str.replace(/^@[^/]+\//, '')
 }
